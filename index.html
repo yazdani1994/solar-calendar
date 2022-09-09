@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets//css/kamadatepicker.min.css" />
+    <title>solar calendar example</title>
+  </head>
+  <body>
+    <h1>solar calendar example</h1>
+    <hr />
+    <input type="text" id="date" />
+    <script src="/assets//js/iquery.js"></script>
+    <script src="/assets//js/kamadatepicker.min.js"></script>
+    <script>
+      let options = {
+        placeholder: "تاریخ تولد",
+        closeAfterSelect: false,
+        nextButtonIcon: "/assets/img/timeir_next.png",
+        previousButtonIcon: "/assets/img/timeir_prev.png",
+        forceFarsiDigits: true,
+        markToday: true,
+        markHolidays: true,
+        highlightSelectedDay: true,
+        gotoToday: true,
+      };
+      kamaDatepicker("date", options);
+    </script>
+  </body>
+</html>
